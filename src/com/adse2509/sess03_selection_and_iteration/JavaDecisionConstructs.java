@@ -1,5 +1,8 @@
 package com.adse2509.sess03_selection_and_iteration;
 
+import com.adse2509.sess02_variables_datatypes_operators.GameDifficulty;
+import com.adse2509.sess02_variables_datatypes_operators.PaymentMethod;
+
 import java.util.Scanner;
 
 /**
@@ -65,6 +68,72 @@ public class JavaDecisionConstructs
         System.out.printf(score >= 40 ? "\nCongratulations, with a score of %d%%, you've "
                 + "passed the exam!🪅🪅" : "\nUnfortunately, with a score of %d%%, you've "
                 + "failed the exam!😢😢\n", score);//succintness  compressed code that does the exact thing
+                //--------------------------------------------------------------
+                 // 3. if ... else if ... else
+                // -------------------------------------------------------------
+                System.out.println("=".repeat(70));
+                System.out.println("3. if ... else if ... else SELECTION CONSTRUCT");
+                System.out.println("=".repeat(70));
+                // Grade student based on their score
+                if(score >= 70 && score <= 100)
+                    System.out.printf("\nWith a score of %d, you got grade 'A'\n", score);
+                else if(score >= 60)
+                    System.out.printf("\nWith a score of %d, you got grade 'B'\n", score);
+                else if(score >= 50)
+                    System.out.printf("\nWith a score of %d, you got grade 'C'\n", score);
+                else if(score >= 40)
+                    System.out.printf("\nWith a score of %d, you got grade 'D'\n", score);
+                else
+                    System.out.printf("\nWith a score of %d, you got grade 'E'\n", score);
+
+                    // -------------------------------------------------------------
+                    // 4. switch ... case for payment enumeration
+                    // -------------------------------------------------------------
+                    System.out.println("=".repeat(70));
+                    System.out.println("4. switch ... case SELECTION CONSTRUCT");
+                    System.out.println("=".repeat(70));
+                    System.out.println("\nPAYMENT PROCESS");
+                    System.out.println("=".repeat(55));
+
+                    PaymentMethod payment = PaymentMethod.DEBIT_CARD;
+                    switch(payment)
+                            { 
+                            case CREDIT_CARD:
+                              System.out.println("Processing credit card ...");
+                              break;
+                          case CASH:
+                              System.out.println("Customer pays with cash.");
+                              break;
+                          case DEBIT_CARD:
+                              System.out.println("Processing debit card ...");
+                              break;
+                          case MOBILE_MONEY:
+                              System.out.println("Confirm payment using your mobile phone.");
+                              break;
+                          case BANK_TRANSFER:
+                              System.out.println("Waiting for bank transfer confirmation.");
+                              break;
+                    }
+
+                // Newer pattern-matching switch (Java 17+)
+              GameDifficulty  difficulty = GameDifficulty.EASY;
+                System.out.println("\nGAME DIFFICULTY SETTINGS");
+                System.out.println("-".repeat(55));
+
+                switch(difficulty)
+                {
+                    case EASY ->
+                        System.out.println("\n" + difficulty + "\nPerfect for beginners.");
+                    case MEDIUM ->
+                        System.out.println("\n" + difficulty + "\nBalanced challenge.");
+                    case HARD ->
+                        System.out.println("\n" + difficulty + "\nGood challenge.");
+                    case EXPERT ->
+                        System.out.println("\n" + difficulty + "\nFor experienced players.");
+                    case NIGHTMARE ->
+                        System.out.println("\n" + difficulty + "\nOnly the best survive!.");
+                }
+
 
     }
 }
