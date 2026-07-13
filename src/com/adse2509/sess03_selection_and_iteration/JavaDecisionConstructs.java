@@ -134,6 +134,7 @@ public class JavaDecisionConstructs
                         System.out.println("\n" + difficulty + "\nOnly the best survive!.");
                 }
 
-
+         //Close the output stream
+         sc.close();
     }
 }
