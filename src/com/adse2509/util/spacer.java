@@ -7,7 +7,8 @@ package com.adse2509.util;
  *  of console output is required.
  *  </p>
  *
- * @author Nyanjui
+ * @author pascal
+ * 
  */
 public final class Spacer
 {

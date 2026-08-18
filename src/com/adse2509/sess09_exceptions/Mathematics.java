@@ -3,7 +3,7 @@ package com.adse2509.sess09_exceptions;
 /**
  * Java program to demonstrate NumberFormat and Arithmetic exceptions.
  *
- * @author Administrator
+ * @author pascal
  */
 public class Mathematics 
 {
