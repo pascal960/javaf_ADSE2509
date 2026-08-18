@@ -1,4 +1,3 @@
-
 package com.adse2509.sess10.date_time_api_enumaration;
 /**
  * Enumeration to represent the four suits in a standard deck of playing cards.
