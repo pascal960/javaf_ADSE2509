@@ -1,4 +1,3 @@
-
 package com.adse2509.util;
 
 /**
